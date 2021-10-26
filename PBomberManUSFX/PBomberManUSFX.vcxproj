@@ -143,7 +143,6 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Bomberman.cpp" />
-    <ClCompile Include="BomberRobot.cpp" />
     <ClCompile Include="Detonador.cpp" />
     <ClCompile Include="Enemigo.cpp" />
     <ClCompile Include="Explosion.cpp" />
@@ -157,6 +156,7 @@
     <ClCompile Include="MuroCeramica.cpp" />
     <ClCompile Include="MuroMetal.cpp" />
     <ClCompile Include="principal.cpp" />
+    <ClCompile Include="RobotBomber.cpp" />
     <ClCompile Include="SueloCesped.cpp" />
     <ClCompile Include="system\KeyboardInput.cpp" />
     <ClCompile Include="Texture.cpp" />
@@ -165,7 +165,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Bomberman.h" />
-    <ClInclude Include="BomberRobot.h" />
     <ClInclude Include="Detonador.h" />
     <ClInclude Include="Enemigo.h" />
     <ClInclude Include="Explosion.h" />
@@ -178,6 +177,7 @@
     <ClInclude Include="MuroCeramica.h" />
     <ClInclude Include="MuroMetal.h" />
     <ClInclude Include="Pila.h" />
+    <ClInclude Include="RobotBomber.h" />
     <ClInclude Include="SueloCesped.h" />
     <ClInclude Include="system\KeyboardInput.h" />
     <ClInclude Include="Texture.h" />

@@ -103,3 +103,20 @@ Bomberman* TilesGraph::getBomberman()
 
     return nullptr;
 }
+
+BomberRobot* TilesGraph::getBomberRobot()
+{
+    /*for (int i = 0 : i < tilesGraph.size(); i++) {
+        if( tilesGraph[i]->getBomberman() != null){
+            return tilesGraph[i]->getBomberman();
+        }
+    }*/
+
+    for (auto itg = vTilesGraph.begin(); itg != vTilesGraph.end(); ++itg) {
+        if ((*itg)->getBomberRobot() != nullptr) {
+            return (*itg)->getBomberRobot();
+        }
+    }
+
+    return nullptr;
+}

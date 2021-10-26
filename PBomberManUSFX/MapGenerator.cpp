@@ -31,6 +31,7 @@ bool MapGenerator::crearObjetosJuego(string _path)
 
 	string line;
 	
+
 	Texture* texturaBomberRobot;
 	texturaBomberRobot = new Texture();
 	Texture* texturaBomberman;
@@ -97,6 +98,22 @@ bool MapGenerator::crearObjetosJuego(string _path)
 				case '1':
 					objetoNuevo = new MuroCeramica(texturaMuroCeramica, tileNuevo);
 					
+					//tarea
+					
+				
+					if (x % 2 == 0 && y % 2 == 0) {
+						int key = 0;
+						mObjeMCP[key] = { x,y };
+						key = x * TilesGraph::anchoTilesGraph + y;
+						for (auto i = mObjeMCP.begin(); i != mObjeMCP.end();++i ) {
+
+							cout << x << " " ;
+							cout << y << " " ;
+
+						}
+					}
+				
+					
 					break;
 				case '2':
 					objetoNuevo = new MuroMetal(texturaMuroMetal, tileNuevo);
@@ -145,16 +162,16 @@ bool MapGenerator::crearObjetosJuego(string _path)
 	}
 	GameObject* objetoBomberRobot = nullptr;
 	tileNuevo = tilesGraph->getTileEn(bomberRobotPosicionX, bomberRobotPosicionY);
-	objetoBomberRobot = new BomberRobot(texturaBomberRobot, tileNuevo);
+	objetoBomberRobot = new RobotBomber(texturaBomberRobot, tileNuevo);
 	if (objetoBomberRobot != nullptr) {
 		((GameActor*)objetoBomberRobot)->setPosicionX(bomberRobotPosicionX * 34);
 		((GameActor*)objetoBomberRobot)->setPosicionY(bomberRobotPosicionY * 34);
-	 /*  ((GamePawn*)objetoBomberRobot)->setBotomBomba(SDLK_p);
+	   ((GamePawn*)objetoBomberRobot)->setBotomBomba(SDLK_p);
 		((GamePawn*)objetoBomberRobot)->setBotomArriba(SDLK_i);
 		((GamePawn*)objetoBomberRobot)->setBotomAbajo(SDLK_k);
 		((GamePawn*)objetoBomberRobot)->setBotomIzquierda(SDLK_j);
 		((GamePawn*)objetoBomberRobot)->setBotomDerecha(SDLK_l);
-		*/
+		
 
 		vectorObjectosJuego.push_back(objetoBomberRobot);
 	}

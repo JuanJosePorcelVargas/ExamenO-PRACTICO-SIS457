@@ -86,7 +86,7 @@ bool GameActor::tratarDeMover(MoveDirection _direccionNueva) {
 		tileDestino = tilesGraph->getTileEn(tileActual->getPosicionTileX() + 1, tileActual->getPosicionTileY());
 		break;
 	}
-	               //Examen
+	                                          //Examen
 
                                            //pregunta 4
 
@@ -95,21 +95,23 @@ bool GameActor::tratarDeMover(MoveDirection _direccionNueva) {
 		setTileSiguiente(nullptr);
 		return false;
 	}
-
+	
 	if (tileDestino->getMuroMetal() != nullptr)
 	{
 		setTileSiguiente(nullptr);
 		return false;
 	}
+	
 	/*
-	if (tileDestino->getMuroCeramica() != nullptr)
+	if (tileDestino->getMuroCeramica() != nullptr) 
 	{
 		setTileSiguiente(nullptr);
 		return false;
 	}
 	*/
+
 	
 
-	setTileSiguiente(tileDestino);
+	setTileSiguiente(tileDestino);      
 	return true;
 }

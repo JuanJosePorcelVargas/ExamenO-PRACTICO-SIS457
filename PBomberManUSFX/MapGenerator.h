@@ -12,10 +12,12 @@
 #include "Tile.h"
 #include "TilesGraph.h"
 #include "Pila.h"
+#include "RobotBomber.h"
 
 class MapGenerator
 {
 private:
+	map<int, array<int, 2>>mObjeMCP;
 	vector<GameObject*> vectorObjectosJuego;
 	//Pila<GameObject*> pilaObjetosJuegoMurosMetal = Pila<GameObject*>(500);
 

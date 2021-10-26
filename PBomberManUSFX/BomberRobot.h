@@ -1,6 +1,7 @@
 #pragma once
 #include<iostream>
 #include"GamePawn.h"
+#include "Bomberman.h"
 
 using namespace std;
 
@@ -24,5 +25,10 @@ public:
 
 
 
+};
+
+class bomberRobot :
+	public Bomberman
+{
 };
 

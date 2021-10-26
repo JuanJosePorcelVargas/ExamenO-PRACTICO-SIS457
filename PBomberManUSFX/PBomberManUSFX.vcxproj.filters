@@ -72,7 +72,7 @@
     <ClCompile Include="GamePawn.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
-    <ClCompile Include="BomberRobot.cpp">
+    <ClCompile Include="RobotBomber.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
   </ItemGroup>
@@ -131,7 +131,7 @@
     <ClInclude Include="Pila.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-    <ClInclude Include="BomberRobot.h">
+    <ClInclude Include="RobotBomber.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
   </ItemGroup>
